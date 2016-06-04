@@ -1,0 +1,22 @@
+{
+  "name": "bobby-earl-traffic",
+  "version": "1.0.0",
+  "description": "Bobby Earl Traffic",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bobbyearl/traffic-electron.git"
+  },
+  "author": "Bobby Earl",
+  "bugs": {
+    "url": "https://github.com/bobbyearl/traffic-electron/issues"
+  },
+  "homepage": "https://github.com/bobbyearl/traffic-electron",
+  "devDependencies": {
+    "blackbaud-skyux": "^1.6.1",
+    "electron-prebuilt": "^1.2.0"
+  }
+}

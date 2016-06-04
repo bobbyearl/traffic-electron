@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html charset="utf-8" ng-app="traffic">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bobby Earl Traffic</title>
+  <!--<link rel="stylesheet" href="../node_modules/blackbaud-skyux/dist/css/sky-bundle.css">-->
+  <link rel="stylesheet" href="https://sky.blackbaudcdn.net/skyux/1.6.1/css/sky-bundle.css" integrity="sha384-28pPartjE9yn04Uk6EZMZppZVm2T/lMNHsheSMKRg4j+bAmSgCNrCgjFv1NCQkiZ" crossorigin="anonymous">
+</head>
+<body>
+
+  <bb-navbar>
+    <div class="container-fluid">
+      <ul class="nav navbar-nav navbar-left">
+        <li class="bb-navbar-active"><a href="">Selected Item</a></li>
+        <li class="dropdown">
+          <a href="" class="dropdown-toggle" role="button">Child Items <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li>
+              <a href="">Child Item 1</a>
+            </li>
+            <li>
+              <a href="">Child Item 2</a>
+            </li>
+            <li>
+              <a href="">Child Item 3</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="">Right Item</a></li>
+      </ul>
+    </div>
+  </bb-navbar>
+
+  <ui-view></ui-view>
+
+  <!-- http://stackoverflow.com/questions/32621988/electron-jquery-is-not-defined  -->
+  <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+  <script src="../node_modules/blackbaud-skyux/dist/js/sky-bundle.min.js"></script>
+  <script src="js/_app.js"></script>
+  <script src="js/_config.js"></script>
+  <script src="js/controller.home.js"></script>
+  <script>if (window.module) module = window.module;</script>
+
+</body>
+
+</html>
