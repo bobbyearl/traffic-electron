@@ -16,6 +16,7 @@
   },
   "homepage": "https://github.com/bobbyearl/traffic-electron",
   "devDependencies": {
+    "angular-sanitize": "^1.5.6",
     "blackbaud-skyux": "^1.6.1",
     "electron-prebuilt": "^1.2.0"
   }
