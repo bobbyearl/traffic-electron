@@ -1,0 +1,27 @@
+<!--
+<div ng-repeat="camera in ctrl.region.cameras" class="camera-wrapper">
+  <camera
+    rtmp="camera.properties.rtmp_url"
+    http="camera.properties.http_url">
+  </camera>
+</div>
+-->
+
+<ng-map
+  center="{{ ctrl.region.center }}"
+  zoom="{{ ctrl.region.zoom }}"
+  class="map">
+  <!--
+  <custom-marker
+    ng-repeat="marker in ctrl.markers track by $index"
+    position="{{ marker.geometry.coordinates[1] }}, {{ marker.geometry.coordinates[0] }}">
+    <div>
+      <camera
+        player-id="camera-{{ $index }}"
+        rtmp="marker.properties.rtmp_url"
+        http="marker.properties.http_url">
+      </camera>
+    </div>
+  </custom-marker>
+-->
+</ng-map>

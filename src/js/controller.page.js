@@ -3,14 +3,15 @@
 
   PageController.$inject = [
     'bbPage',
-    'RoutesService'
+    'RegionService'
   ];
 
-  function PageController(bbPage, RoutesService) {
+  function PageController(bbPage, RegionService) {
     var _this = this;
 
-    //_this.status = bbPage.pageStatuses.LOADED;
-    _this.routes = RoutesService.getRoutes();
+    RegionService.getRegions().then(function (regions) {
+      _this.regions = regions;
+    });
 
   }
 

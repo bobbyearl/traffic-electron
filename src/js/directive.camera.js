@@ -7,7 +7,7 @@
 
   function Camera($compile) {
     return {
-      restrict: 'EC',
+      restrict: 'E',
       scope: {
         playerId: '@',
         rtmp: '=rtmp',
@@ -16,7 +16,7 @@
       link: function (scope, element, attrs) {
         var id = scope.playerId || 'random_player_' + Math.floor((Math.random() * 999999999) + 1);
         var getTemplate = function (playerId) {
-          return '<div id="' + playerId + '"></div>';
+          return '<div class="camera"><div id="' + playerId + '"></div></div>';
         };
 
         element.html(getTemplate(id));

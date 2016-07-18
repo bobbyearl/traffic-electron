@@ -2,15 +2,11 @@
   'use strict';
 
   Run.$inject = [
-    'bbWait',
-    'RoutesService'
+    'CameraService'
   ];
 
-  function Run(bbWait, RoutesService) {
-    bbWait.beginPageWait();
-    RoutesService.init().then(function () {
-      bbWait.endPageWait();
-    });
+  function Run(CameraService) {
+    CameraService.init();
   }
 
   angular.module('traffic').run(Run);

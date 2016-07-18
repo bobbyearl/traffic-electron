@@ -7,7 +7,7 @@
   ];
 
   function Config($urlRouterProvider, $stateProvider) {
-    $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/map');
     $stateProvider
       .state('home', {
         controller: 'HomeController',
@@ -15,11 +15,11 @@
         templateUrl: './views/home.html',
         url: '/home'
       })
-      .state('route', {
-        controller: 'RouteController',
+      .state('map', {
+        controller: 'MapController',
         controllerAs: 'ctrl',
-        templateUrl: './views/route.html',
-        url: '/route/:id'
+        templateUrl: './views/map.html',
+        url: '/map/{regionId}/{routeId}'
       });
   }
 

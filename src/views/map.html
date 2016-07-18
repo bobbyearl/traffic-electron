@@ -1,0 +1,10 @@
+<div id="sidebar">
+  <h3>{{ ctrl.route.name }}</h3>
+  <ul class="list-unstyled">
+    <li ng-repeat="camera in ctrl.route.cameras">
+      <a href="#" ng-click="ctrl.modal(camera)">
+        {{ camera.properties.title }}
+      </a>
+    </li>
+  </ul>
+</div>
